@@ -70,6 +70,10 @@
         <item>"wlan0"</item>
     </string-array>
 
+    <string-array translatable="false" name="config_tether_bluetooth_regexs">
+        <item>"bt-pan"</item>
+    </string-array>
+
     <!-- Array of allowable ConnectivityManager network types for tethering -->
     <!-- Common options are [1, 4] for TYPE_WIFI and TYPE_MOBILE_DUN or
          [0,1,5,7] for TYPE_MOBILE, TYPE_WIFI, TYPE_MOBILE_HIPRI and TYPE_BLUETOOTH -->
@@ -162,7 +166,7 @@
     <!-- reference volume index for music stream to limit headphone volume and display warning -->
     <integer name="config_safe_media_volume_index">10</integer>
 
-    <bool name="config_enableWifiDisplay">true</bool>
+    <bool name="config_enableWifiDisplay">false</bool>
 
     <!-- Minimum span needed to begin a touch scaling gesture.
          If the span is equal to or greater than this size, a scaling gesture
@@ -181,8 +185,6 @@
     <!-- Flag indicating if the speed up audio on mt call code should be executed -->
     <bool name="config_speed_up_audio_on_mt_calls">true</bool>
 
-
-    <integer name="config_deviceHardwareKeys">0</integer>
 
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
                   autodetected from the Configuration. -->
@@ -244,5 +246,12 @@
         <item>0</item>
         <item>0</item>
     </integer-array>
+
+    <!-- Disable lockscreen translucent decor by default -->
+    <bool name="config_enableLockScreenTranslucentDecor">true</bool>
+
+    <!-- Performance profiles -->
+    <string name="config_perf_profile_prop">sys.perf.profile</string>
+    <string name="config_perf_profile_default_entry">1</string>
 
 </resources>
